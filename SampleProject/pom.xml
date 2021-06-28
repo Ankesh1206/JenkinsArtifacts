@@ -42,6 +42,9 @@
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 						<!-- <suiteXmlFile>src/test/resources/test_parameters.xml</suiteXmlFile> -->
 					</suiteXmlFiles>
+					<systemPropertyVariables>
+					<browser>${Browser}</browser>
+					</systemPropertyVariables>
 				</configuration>
 			</plugin>
 		</plugins>
