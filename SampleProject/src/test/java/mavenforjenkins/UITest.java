@@ -20,7 +20,7 @@ public class UITest {
 			driver = new ChromeDriver();
 		}
 		else if (browserName.contains("Edge")) {
-			WebDriverManager.edgedriver().setup();
+			WebDriverManager.edgedriver().browserVersion("91.0.864.59").setup();
 			driver = new EdgeDriver();
 		}
 		
