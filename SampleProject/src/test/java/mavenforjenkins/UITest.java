@@ -38,10 +38,12 @@ public class UITest {
 		else {
 			System.out.println("No browser specified :(");
 			}
-
+		System.out.println("Parameter value is "+browserName);
 		driver.manage().window().maximize();
 		driver.get("https://opensource-demo.orangehrmlive.com");
+		System.out.println("Parameter value is "+browserName);
 		Assert.assertTrue(driver.getTitle().contains("Orange"), "Title does not match");
+		System.out.println("Parameter value is "+browserName);
 		driver.quit();
 	}
 }
