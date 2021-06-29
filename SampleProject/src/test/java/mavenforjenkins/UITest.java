@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -29,6 +30,10 @@ public class UITest {
 		else if (browserName.contains("Firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
+		}
+		else if (browserName.contains("IE")) {
+			WebDriverManager.iedriver().setup();
+			driver = new InternetExplorerDriver();
 		}
 
 		driver.manage().window().maximize();
