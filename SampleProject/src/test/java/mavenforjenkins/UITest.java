@@ -36,7 +36,7 @@ public class UITest {
 			driver = new InternetExplorerDriver();
 		}
 		else {
-			System.out.println("No browser specified");
+			System.out.println("No browser specified :(");
 			}
 
 		driver.manage().window().maximize();
