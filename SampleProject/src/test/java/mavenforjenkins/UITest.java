@@ -14,7 +14,7 @@ public class UITest {
 	@Parameters("Browser")
 	@Test
 	public void startBrowser(String browserName) {
-		
+
 		WebDriver driver = null;
 		System.out.println("Parameter value is "+browserName);
 		if(browserName.contains("Chrome")) {
@@ -29,10 +29,11 @@ public class UITest {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		}
-		
+
 		driver.manage().window().maximize();
 		driver.get("https://opensource-demo.orangehrmlive.com");
 		Assert.assertTrue(driver.getTitle().contains("Orange"), "Title doesnot match");
 		driver.quit();
+
 	}
 }
