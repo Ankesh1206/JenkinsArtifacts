@@ -35,6 +35,7 @@ public class UITest {
 			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
 		}
+		else {System.out.println("No browser specified");}
 
 		driver.manage().window().maximize();
 		driver.get("https://opensource-demo.orangehrmlive.com");
